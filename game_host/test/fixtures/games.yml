@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: 
+  description: 
+  icon_img_src: 
+  webplayer_url: MyString
+  string,: MyString
+  chrome_url: MyString
+
+two:
+  title: 
+  description: 
+  icon_img_src: 
+  webplayer_url: MyString
+  string,: MyString
+  chrome_url: MyString
