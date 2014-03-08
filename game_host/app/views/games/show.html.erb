@@ -31,15 +31,9 @@
 <br>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Unity Web Player | The Dark Knight</title>
-		<script type='text/javascript' src='jquery.min.js'></script>
-		<script type="text/javascript">
-		<!--
-		var unityObjectUrl = "UnityObject2.js";
-		if (document.location.protocol == 'https:')
-			unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
-		document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
-		-->
-		</script>
+    <%= javascript_include_tag "UnityJQuery.min" %>
+    <%= javascript_include_tag "UnityStreamer" %>
+    <script type="text/javascript" src="/assets/UnityStreamer.js"></script>
 		<script type="text/javascript">
 		<!--
 			var config = {
@@ -84,7 +78,7 @@
 						break;
 					}
 				});
-				u.initPlugin(jQuery("#unityPlayer")[0], "thedarkknight_streaming.unity3d");
+				u.initPlugin(jQuery("#unityPlayer")[0], "<%= @game.webplayer_url %>");
 			});
 		-->
 		</script>
