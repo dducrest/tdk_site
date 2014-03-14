@@ -24,8 +24,6 @@
         <td><%= game.webplayer_url %></td>
         <td><%= game.chrome_url %></td>
         <td><%= link_to 'Show', game %></td>
-        <td><%= link_to 'Edit', edit_game_path(game) %></td>
-        <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -33,4 +31,4 @@
 
 <br>
 
-<%= link_to 'New Game', new_game_path %>
+<% # link_to 'New Game', new_game_path %>
